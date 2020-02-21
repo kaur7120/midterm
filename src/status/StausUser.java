@@ -3,19 +3,31 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package status;
 
 /**
  *
  * @author srinivsi
  */
+
+/*
+Modifier : Amandeep Kaur
+
+*/
 public class StausUser 
 {
-   public void statusDetail(String code)
-{
-switch(code.toUpperCase())
+    public enum Value {REJECTED, PROCESSED,PENDING, APPROVED};
+    private final Value value;
+    
+  public StausUser( Value Val)
+        { 
+           value= Val;
+        }   
+    
+   switch(code.toUpperCase())
         {
-        case "ZERO": System.out.println("REJECTED");
+        case "ZERO": "REJECTED";
         break;
         case "ONE": System.out.println("PENDING");
         break;

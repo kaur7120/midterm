@@ -16,15 +16,22 @@ import java.util.Scanner;
  * and print the status details. 
  * @author srinivsi
  */
+
+/*
+modifier : Amandeep kaur
+*/
 public class Status {
 
     /**
      * @param args the command line arguments
      */
+    
+    
+    
     public static void main(String[] args)
     {
     Scanner in =new Scanner(System.in);
-    System.out.println("Enter the user status code (zero,one,two,three) in string");
+    System.out.println(code.value);
     String code = in.next();
     StausUser t= new StausUser();
     t.statusDetail(code); 
